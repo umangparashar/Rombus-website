@@ -3,31 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Preview reusable CSS utilities for glassmorphism, blur, shadow, and glow effects."
+    />
     <title>Visual Effects Preview</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="PreviewBody">
-    <main class="Preview">
+    <main class="Preview" aria-labelledby="visual-effects-heading">
       <header class="Preview__header">
-        <h1 class="Headings__H1">Visual Effects Showcase</h1>
+        <h1 class="Headings__H1" id="visual-effects-heading">Visual Effects Showcase</h1>
         <p class="Content__Body">
           Explore reusable utility classes for shadow, glass, blur, and glow effects.
         </p>
       </header>
 
-      <section class="Preview__grid">
+      <section class="Preview__grid" aria-label="Effect examples">
         <article class="Preview__card">
           <h2 class="Headings__H3">Input Shadow</h2>
           <p class="Content__BodySmall">
-            Apply the <code>.InputShadow</code> class to elevate form fields and
-            subtle surfaces.
+            Apply the <code>.InputShadow</code> class to elevate form fields and subtle surfaces.
           </p>
           <label class="Content__Caption" for="preview-input">Email</label>
           <input
             id="preview-input"
             type="email"
+            name="email"
+            autocomplete="email"
             placeholder="you@example.com"
             class="Preview__input InputShadow"
           />
@@ -36,10 +41,9 @@
         <article class="Preview__card Preview__card--glass">
           <h2 class="Headings__H3">Glassmorphism</h2>
           <p class="Content__BodySmall">
-            Combine <code>.Glass</code> with translucent layouts to create a
-            frosted glass panel.
+            Combine <code>.Glass</code> with translucent layouts to create a frosted glass panel.
           </p>
-          <div class="Glass Preview__glassPanel">
+          <div class="Glass Preview__glassPanel" role="group" aria-label="Frosted panel sample">
             <span class="Content__Title">Frosted Panel</span>
             <span class="Content__BodySmall">Temperature: 22°C</span>
             <span class="Content__BodySmall">Humidity: 48%</span>
@@ -49,8 +53,7 @@
         <article class="Preview__card Preview__card--blur">
           <h2 class="Headings__H3">Backdrop Blur</h2>
           <p class="Content__BodySmall">
-            Use <code>.Blur</code> to soften the background behind translucent
-            overlays.
+            Use <code>.Blur</code> to soften the background behind translucent overlays.
           </p>
           <div class="Preview__blurScene">
             <div class="Preview__blurLayer Blur">
@@ -63,10 +66,9 @@
         <article class="Preview__card Preview__card--glow">
           <h2 class="Headings__H3">Button Glow</h2>
           <p class="Content__BodySmall">
-            The <code>.ButtonGlow</code> utility adds a vibrant halo around your
-            call-to-action buttons.
+            The <code>.ButtonGlow</code> utility adds a vibrant halo around your call-to-action buttons.
           </p>
-          <button class="Preview__button ButtonGlow">Try it now</button>
+          <button type="button" class="Preview__button ButtonGlow">Try it now</button>
         </article>
       </section>
     </main>
