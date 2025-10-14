@@ -94,59 +94,46 @@
   font-weight: 400;
 }
 
-.Neutral__Default {
-  background: #e6e6e6;
-}
-
-.Neutral__SubtleWhite {
-  background: #bdbdbd;
-}
-
-.Neutral__LightGrey {
-  background: #656565;
-}
-
-.Neutral__Grey {
-  background: #232323;
-}
-
-.Neutral__DarkGrey {
-  background: #111111;
-}
-
-.Neutral__Background {
-  background: #070707;
-}
-
-.Neutral__Brand__Default {
+.Brand__Default{
   background: #b2e200;
 }
-
-.Neutral__Brand__Light {
+.Brand__Light{
   background: #e8f6b3;
 }
-
-.Neutral__Brand__Dark {
+.Brand__Dark{
   background: #354400;
 }
-
-.Neutral__Brand__ByzantineBlue {
+.Brand__ByzantineBlue{
   background: #2f52e0;
 }
-
-.Neutral__Brand__IndiaGreen {
+.Brand__IndiaGreen{
   background: #008b00;
 }
-
-.Error__Default {
+.Neutral__Default{
+  background: #e6e6e6;
+}
+.Neutral__SubtleWhite{
+  background: #bdbdbd;
+}
+.Neutral__LightGrey{
+  background: #656565;
+}
+.Neutral__Grey{
+  background: #232323;
+}
+.Neutral__DarkGrey{
+  background: #111111;
+}
+.Neutral__Background{
+  background: #070707;
+}
+.Error__Default{
   background: #ff705b;
 }
-
-.Error__Light {
+.Error__Light{
   background: #ffd4ce;
 }
-
-.Error__Dark {
+.Error__Dark{
   background: #4c221b;
 }
 
