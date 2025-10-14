@@ -1,1 +1,208 @@
+:root {
+  /* Neutral palette */
+  --color-neutral-default: #e6e6e6;
+  --color-neutral-subtle-white: #bdbdbd;
+  --color-neutral-light-grey: #656565;
+  --color-neutral-grey: #232323;
+  --color-neutral-dark-grey: #111111;
+  --color-neutral-background: #070707;
 
+  /* Brand palette */
+  --color-brand-default: #b2e200;
+  --color-brand-light: #e8f6b3;
+  --color-brand-dark: #354400;
+  --color-brand-byzantine-blue: #2f52e0;
+  --color-brand-india-green: #008b00;
+
+  /* Error palette */
+  --color-error-default: #ff705b;
+  --color-error-light: #ffd4ce;
+  --color-error-dark: #4c221b;
+}
+
+/* Utility classes for quick reference */
+.Neutral__Default { background: var(--color-neutral-default); }
+.Neutral__SubtleWhite { background: var(--color-neutral-subtle-white); }
+.Neutral__LightGrey { background: var(--color-neutral-light-grey); }
+.Neutral__Grey { background: var(--color-neutral-grey); }
+.Neutral__DarkGrey { background: var(--color-neutral-dark-grey); }
+.Neutral__Background { background: var(--color-neutral-background); }
+.Neutral__Brand__Default { background: var(--color-brand-default); }
+.Neutral__Brand__Light { background: var(--color-brand-light); }
+.Neutral__Brand__Dark { background: var(--color-brand-dark); }
+.Neutral__Brand__ByzantineBlue { background: var(--color-brand-byzantine-blue); }
+.Neutral__Brand__IndiaGreen { background: var(--color-brand-india-green); }
+.Error__Default { background: var(--color-error-default); }
+.Error__Light { background: var(--color-error-light); }
+.Error__Dark { background: var(--color-error-dark); }
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--color-neutral-background);
+  color: var(--color-neutral-default);
+}
+
+.tokens-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 3.5rem 1.5rem 4rem;
+}
+
+.tokens {
+  width: min(76rem, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.tokens__intro {
+  display: grid;
+  gap: 1rem;
+  max-width: 52rem;
+}
+
+.tokens__eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.8rem;
+  color: var(--color-brand-light);
+}
+
+.tokens__intro p {
+  color: var(--color-neutral-subtle-white);
+  line-height: 1.6;
+}
+
+.tokens__section {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.tokens__section-header {
+  display: grid;
+  gap: 0.5rem;
+  max-width: 40rem;
+}
+
+.tokens__section-header p {
+  color: var(--color-neutral-subtle-white);
+}
+
+.tokens__table {
+  background: var(--color-neutral-grey);
+  border: 1px solid var(--color-neutral-dark-grey);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.tokens__table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tokens__table th,
+.tokens__table td {
+  padding: 1rem 1.25rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-neutral-dark-grey);
+}
+
+.tokens__table thead th {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-brand-light);
+}
+
+.tokens__table tbody th {
+  font-weight: 600;
+  color: var(--color-brand-default);
+  letter-spacing: 0.02em;
+}
+
+.tokens__table tbody td code {
+  font-family: "Fira Code", "SFMono-Regular", "Consolas", monospace;
+  color: var(--color-brand-byzantine-blue);
+  font-size: 0.95rem;
+}
+
+.tokens__table tbody td span {
+  color: var(--color-neutral-default);
+}
+
+.tokens__table tbody tr:last-child th,
+.tokens__table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.swatch {
+  display: inline-flex;
+  width: 3.5rem;
+  height: 1.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-neutral-dark-grey);
+}
+
+@media (max-width: 60rem) {
+  .tokens {
+    gap: 2.5rem;
+  }
+
+  .tokens__table {
+    border-radius: 0.75rem;
+  }
+
+  .tokens__table th,
+  .tokens__table td {
+    padding: 0.75rem 1rem;
+  }
+}
+
+@media (max-width: 40rem) {
+  .tokens-page {
+    padding: 3rem 1rem;
+  }
+
+  .tokens__table table,
+  .tokens__table thead,
+  .tokens__table tbody,
+  .tokens__table th,
+  .tokens__table td,
+  .tokens__table tr {
+    display: block;
+    width: 100%;
+  }
+
+  .tokens__table thead {
+    display: none;
+  }
+
+  .tokens__table tbody tr {
+    border-bottom: 1px solid var(--color-neutral-dark-grey);
+    padding: 1rem 1.25rem;
+  }
+
+  .tokens__table tbody tr:last-child {
+    border-bottom: none;
+  }
+
+  .tokens__table tbody th {
+    margin-bottom: 0.5rem;
+  }
+
+  .tokens__table tbody td {
+    padding: 0.25rem 0 0.25rem;
+    border-bottom: none;
+  }
+
+  .tokens__table tbody td span,
+  .tokens__table tbody td code {
+    display: inline-block;
+  }
+
+  .tokens__table tbody td:last-child {
+    margin-top: 0.5rem;
+  }
+}

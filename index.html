@@ -1,1 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design Color Tokens</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="tokens-page">
+    <main class="tokens" aria-labelledby="tokens-title">
+      <header class="tokens__intro">
+        <p class="tokens__eyebrow">Design foundations</p>
+        <h1 id="tokens-title">Color tokens</h1>
+        <p>
+          The palette below lists each semantic color token alongside its CSS custom
+          property, hexadecimal value, and a visual swatch. Use these tokens when
+          building components so color usage stays consistent with the design
+          system.
+        </p>
+      </header>
 
+      <section class="tokens__section" aria-labelledby="neutral-heading">
+        <div class="tokens__section-header">
+          <h2 id="neutral-heading">Neutral palette</h2>
+          <p>Primary surfaces and typography colors.</p>
+        </div>
+        <div class="tokens__table" role="group" aria-labelledby="neutral-heading">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Token</th>
+                <th scope="col">CSS variable</th>
+                <th scope="col">Hex</th>
+                <th scope="col">Preview</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">.Neutral__Default</th>
+                <td><code>--color-neutral-default</code></td>
+                <td><span>#e6e6e6</span></td>
+                <td><span class="swatch Neutral__Default" aria-hidden="true"></span></td>
+              </tr>
+              <tr>
+                <th scope="row">.Neutral__SubtleWhite</th>
+                <td><code>--color-neutral-subtle-white</code></td>
+                <td><span>#bdbdbd</span></td>
+                <td><span class="swatch Neutral__SubtleWhite" aria-hidden="true"></span></td>
+              </tr>
+              <tr>
+                <th scope="row">.Neutral__LightGrey</th>
+                <td><code>--color-neutral-light-grey</code></td>
+                <td><span>#656565</span></td>
+                <td><span class="swatch Neutral__LightGrey" aria-hidden="true"></span></td>
+              </tr>
+              <tr>
+                <th scope="row">.Neutral__Grey</th>
+                <td><code>--color-neutral-grey</code></td>
+                <td><span>#232323</span></td>
+                <td><span class="swatch Neutral__Grey" aria-hidden="true"></span></td>
+              </tr>
+              <tr>
+                <th scope="row">.Neutral__DarkGrey</th>
+                <td><code>--color-neutral-dark-grey</code></td>
+                <td><span>#111111</span></td>
+                <td><span class="swatch Neutral__DarkGrey" aria-hidden="true"></span></td>
+              </tr>
+              <tr>
+                <th scope="row">.Neutral__Background</th>
+                <td><code>--color-neutral-background</code></td>
+                <td><span>#070707</span></td>
+                <td><span class="swatch Neutral__Background" aria-hidden="true"></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="tokens__section" aria-labelledby="brand-heading">
+        <div class="tokens__section-header">
+          <h2 id="brand-heading">Brand palette</h2>
+          <p>Accent colors for emphasis and call-to-actions.</p>
+        </div>
+        <div class="tokens__table" role="group" aria-labelledby="brand-heading">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Token</th>
+                <th scope="col">CSS variable</th>
+                <th scope="col">Hex</th>
+                <th scope="col">Preview</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">.Neutral__Brand__Default</th>
+                <td><code>--color-brand-default</code></td>
+                <td><span>#b2e200</span></td>
+                <td><span class="swatch Neutral__Brand__Default" aria-hidden="true"></span></td>
+              </tr>
+              <tr>
+                <th scope="row">.Neutral__Brand__Light</th>
+                <td><code>--color-brand-light</code></td>
+                <td><span>#e8f6b3</span></td>
+                <td><span class="swatch Neutral__Brand__Light" aria-hidden="true"></span></td>
+              </tr>
+              <tr>
+                <th scope="row">.Neutral__Brand__Dark</th>
+                <td><code>--color-brand-dark</code></td>
+                <td><span>#354400</span></td>
+                <td><span class="swatch Neutral__Brand__Dark" aria-hidden="true"></span></td>
+              </tr>
+              <tr>
+                <th scope="row">.Neutral__Brand__ByzantineBlue</th>
+                <td><code>--color-brand-byzantine-blue</code></td>
+                <td><span>#2f52e0</span></td>
+                <td><span class="swatch Neutral__Brand__ByzantineBlue" aria-hidden="true"></span></td>
+              </tr>
+              <tr>
+                <th scope="row">.Neutral__Brand__IndiaGreen</th>
+                <td><code>--color-brand-india-green</code></td>
+                <td><span>#008b00</span></td>
+                <td><span class="swatch Neutral__Brand__IndiaGreen" aria-hidden="true"></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="tokens__section" aria-labelledby="error-heading">
+        <div class="tokens__section-header">
+          <h2 id="error-heading">Error palette</h2>
+          <p>Feedback colors for validation and alerts.</p>
+        </div>
+        <div class="tokens__table" role="group" aria-labelledby="error-heading">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Token</th>
+                <th scope="col">CSS variable</th>
+                <th scope="col">Hex</th>
+                <th scope="col">Preview</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">.Error__Default</th>
+                <td><code>--color-error-default</code></td>
+                <td><span>#ff705b</span></td>
+                <td><span class="swatch Error__Default" aria-hidden="true"></span></td>
+              </tr>
+              <tr>
+                <th scope="row">.Error__Light</th>
+                <td><code>--color-error-light</code></td>
+                <td><span>#ffd4ce</span></td>
+                <td><span class="swatch Error__Light" aria-hidden="true"></span></td>
+              </tr>
+              <tr>
+                <th scope="row">.Error__Dark</th>
+                <td><code>--color-error-dark</code></td>
+                <td><span>#4c221b</span></td>
+                <td><span class="swatch Error__Dark" aria-hidden="true"></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
