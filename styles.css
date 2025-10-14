@@ -1,0 +1,172 @@
+:root {
+  --radius-none: 0px;
+  --radius-extra-small: 4px;
+  --radius-small: 8px;
+  --radius-medium: 12px;
+  --radius-large: 16px;
+  --radius-extra-large: 24px;
+  --radius-full: 1000px;
+  --radius-corner-smoothing: 60%;
+}
+
+.Hero {
+  font-size: 64px;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 500;
+  line-height: 62px;
+}
+
+.Headings__H1 {
+  font-size: 40px;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 500;
+  line-height: 48px;
+}
+
+.Headings__H2 {
+  font-size: 32px;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.Headings__H3 {
+  font-size: 24px;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.Content__Title {
+  font-size: 20px;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.Content__Body {
+  font-size: 16px;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+
+.Content__BodySmall {
+  font-size: 14px;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+
+.Content__Button {
+  font-size: 14px;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.Content__Caption {
+  font-size: 12px;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.Icons__Large {
+  font-size: 24px;
+  font-family: "Material Symbols Sharp", sans-serif;
+  font-weight: 400;
+}
+
+.Icons__Medium {
+  font-size: 20px;
+  font-family: "Material Symbols Sharp", sans-serif;
+  font-weight: 400;
+}
+
+.Icons__Small {
+  font-size: 16px;
+  font-family: "Material Symbols Sharp", sans-serif;
+  font-weight: 400;
+}
+
+.Neutral__Default {
+  background: #e6e6e6;
+}
+
+.Neutral__SubtleWhite {
+  background: #bdbdbd;
+}
+
+.Neutral__LightGrey {
+  background: #656565;
+}
+
+.Neutral__Grey {
+  background: #232323;
+}
+
+.Neutral__DarkGrey {
+  background: #111111;
+}
+
+.Neutral__Background {
+  background: #070707;
+}
+
+.Neutral__Brand__Default {
+  background: #b2e200;
+}
+
+.Neutral__Brand__Light {
+  background: #e8f6b3;
+}
+
+.Neutral__Brand__Dark {
+  background: #354400;
+}
+
+.Neutral__Brand__ByzantineBlue {
+  background: #2f52e0;
+}
+
+.Neutral__Brand__IndiaGreen {
+  background: #008b00;
+}
+
+.Error__Default {
+  background: #ff705b;
+}
+
+.Error__Light {
+  background: #ffd4ce;
+}
+
+.Error__Dark {
+  background: #4c221b;
+}
+
+.InputShadow {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Glass {
+  background: rgba(7, 7, 7, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.Blur {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.ButtonGlow {
+  box-shadow: 0px 8px 40px rgba(178, 226, 0, 0.6);
+}
