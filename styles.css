@@ -84,3 +84,182 @@
   font-family: "Material Symbols Sharp", sans-serif;
   font-weight: 400;
 }
+
+.InputShadow {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Glass {
+  background: linear-gradient(
+    -39deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0px 16px 40px rgba(15, 23, 42, 0.18);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+.Blur {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.ButtonGlow {
+  box-shadow: 0px 8px 40px rgba(178, 226, 0, 0.6);
+}
+
+.PreviewBody {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, #1e293b, #0f172a 55%, #020617);
+  color: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 16px;
+}
+
+.Preview {
+  width: min(1120px, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.Preview__header {
+  text-align: center;
+  display: grid;
+  gap: 16px;
+}
+
+.Preview__grid {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.Preview__card {
+  background: rgba(15, 23, 42, 0.55);
+  border-radius: 20px;
+  padding: 32px;
+  display: grid;
+  gap: 20px;
+  border: 1px solid rgba(148, 163, 184, 0.1);
+  box-shadow: 0px 24px 60px rgba(15, 23, 42, 0.45);
+}
+
+.Preview__card code {
+  font-family: "Roboto Flex", monospace;
+  background: rgba(15, 23, 42, 0.4);
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.Preview__input {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: none;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.Preview__card--glass {
+  background: linear-gradient(132deg, rgba(14, 116, 144, 0.35), rgba(2, 132, 199, 0.05));
+}
+
+.Preview__glassPanel {
+  display: grid;
+  gap: 8px;
+  padding: 24px;
+  color: #0f172a;
+}
+
+.Preview__card--blur {
+  background: linear-gradient(160deg, rgba(124, 58, 237, 0.4), rgba(76, 29, 149, 0.35));
+}
+
+.Preview__blurScene {
+  position: relative;
+  height: 200px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(96, 165, 250, 0.7), rgba(147, 51, 234, 0.7));
+}
+
+.Preview__blurScene::before {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  background: radial-gradient(circle at 20% 30%, rgba(248, 250, 252, 0.6), transparent 55%),
+    radial-gradient(circle at 80% 70%, rgba(190, 242, 100, 0.6), transparent 50%);
+  animation: Preview__float 12s linear infinite;
+}
+
+.Preview__blurLayer {
+  position: absolute;
+  inset: 16px;
+  border-radius: 16px;
+  background: rgba(248, 250, 252, 0.18);
+  border: 1px solid rgba(226, 232, 240, 0.4);
+  color: #0f172a;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  gap: 8px;
+}
+
+@keyframes Preview__float {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translate3d(6%, -4%, 0) scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0.7;
+  }
+}
+
+.Preview__card--glow {
+  background: linear-gradient(135deg, rgba(15, 118, 110, 0.4), rgba(45, 212, 191, 0.12));
+  text-align: center;
+}
+
+.Preview__button {
+  border: none;
+  border-radius: 999px;
+  padding: 14px 36px;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #020617;
+  background: linear-gradient(135deg, #bef264, #a3e635);
+  cursor: pointer;
+  transition: transform 200ms ease;
+}
+
+.Preview__button:hover {
+  transform: translateY(-2px) scale(1.01);
+}
+
+.Preview__button:focus-visible {
+  outline: 3px solid rgba(190, 242, 100, 0.6);
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .PreviewBody {
+    padding: 32px 12px;
+  }
+
+  .Preview__card {
+    padding: 24px;
+  }
+}
