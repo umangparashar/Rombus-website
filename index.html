@@ -1,1 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Tokens Preview</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page">
+    <main class="color-preview" aria-labelledby="color-preview-title">
+      <header class="color-preview__header">
+        <h1 id="color-preview-title">Color Tokens</h1>
+        <p>
+          These swatches provide a quick visual reference for every color token in
+          the design system. Each card lists the utility class, CSS variable, and
+          hexadecimal value so the palette can be reused consistently across the
+          project.
+        </p>
+      </header>
 
+      <section class="color-group" aria-labelledby="neutral-palette-title">
+        <div class="color-group__header">
+          <h2 id="neutral-palette-title">Neutral Palette</h2>
+          <p>Core grays that support backgrounds and typography.</p>
+        </div>
+        <div class="color-grid">
+          <article class="color-card">
+            <div class="color-card__swatch Neutral__Default" role="img" aria-label="Neutral Default"></div>
+            <div class="color-card__meta">
+              <p class="color-card__token">.Neutral__Default</p>
+              <p class="color-card__variable">var(--color-neutral-default)</p>
+              <p class="color-card__value">#e6e6e6</p>
+            </div>
+          </article>
+          <article class="color-card">
+            <div class="color-card__swatch Neutral__SubtleWhite" role="img" aria-label="Neutral Subtle White"></div>
+            <div class="color-card__meta">
+              <p class="color-card__token">.Neutral__SubtleWhite</p>
+              <p class="color-card__variable">var(--color-neutral-subtle-white)</p>
+              <p class="color-card__value">#bdbdbd</p>
+            </div>
+          </article>
+          <article class="color-card">
+            <div class="color-card__swatch Neutral__LightGrey" role="img" aria-label="Neutral Light Grey"></div>
+            <div class="color-card__meta">
+              <p class="color-card__token">.Neutral__LightGrey</p>
+              <p class="color-card__variable">var(--color-neutral-light-grey)</p>
+              <p class="color-card__value">#656565</p>
+            </div>
+          </article>
+          <article class="color-card">
+            <div class="color-card__swatch Neutral__Grey" role="img" aria-label="Neutral Grey"></div>
+            <div class="color-card__meta">
+              <p class="color-card__token">.Neutral__Grey</p>
+              <p class="color-card__variable">var(--color-neutral-grey)</p>
+              <p class="color-card__value">#232323</p>
+            </div>
+          </article>
+          <article class="color-card">
+            <div class="color-card__swatch Neutral__DarkGrey" role="img" aria-label="Neutral Dark Grey"></div>
+            <div class="color-card__meta">
+              <p class="color-card__token">.Neutral__DarkGrey</p>
+              <p class="color-card__variable">var(--color-neutral-dark-grey)</p>
+              <p class="color-card__value">#111111</p>
+            </div>
+          </article>
+          <article class="color-card">
+            <div class="color-card__swatch Neutral__Background" role="img" aria-label="Neutral Background"></div>
+            <div class="color-card__meta">
+              <p class="color-card__token">.Neutral__Background</p>
+              <p class="color-card__variable">var(--color-neutral-background)</p>
+              <p class="color-card__value">#070707</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="color-group" aria-labelledby="brand-palette-title">
+        <div class="color-group__header">
+          <h2 id="brand-palette-title">Brand Palette</h2>
+          <p>Accent tones for emphasis, CTAs, and highlights.</p>
+        </div>
+        <div class="color-grid">
+          <article class="color-card">
+            <div class="color-card__swatch Neutral__Brand__Default" role="img" aria-label="Brand Default"></div>
+            <div class="color-card__meta">
+              <p class="color-card__token">.Neutral__Brand__Default</p>
+              <p class="color-card__variable">var(--color-brand-default)</p>
+              <p class="color-card__value">#b2e200</p>
+            </div>
+          </article>
+          <article class="color-card">
+            <div class="color-card__swatch Neutral__Brand__Light" role="img" aria-label="Brand Light"></div>
+            <div class="color-card__meta">
+              <p class="color-card__token">.Neutral__Brand__Light</p>
+              <p class="color-card__variable">var(--color-brand-light)</p>
+              <p class="color-card__value">#e8f6b3</p>
+            </div>
+          </article>
+          <article class="color-card">
+            <div class="color-card__swatch Neutral__Brand__Dark" role="img" aria-label="Brand Dark"></div>
+            <div class="color-card__meta">
+              <p class="color-card__token">.Neutral__Brand__Dark</p>
+              <p class="color-card__variable">var(--color-brand-dark)</p>
+              <p class="color-card__value">#354400</p>
+            </div>
+          </article>
+          <article class="color-card">
+            <div class="color-card__swatch Neutral__Brand__ByzantineBlue" role="img" aria-label="Brand Byzantine Blue"></div>
+            <div class="color-card__meta">
+              <p class="color-card__token">.Neutral__Brand__ByzantineBlue</p>
+              <p class="color-card__variable">var(--color-brand-byzantine-blue)</p>
+              <p class="color-card__value">#2f52e0</p>
+            </div>
+          </article>
+          <article class="color-card">
+            <div class="color-card__swatch Neutral__Brand__IndiaGreen" role="img" aria-label="Brand India Green"></div>
+            <div class="color-card__meta">
+              <p class="color-card__token">.Neutral__Brand__IndiaGreen</p>
+              <p class="color-card__variable">var(--color-brand-india-green)</p>
+              <p class="color-card__value">#008b00</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="color-group" aria-labelledby="error-palette-title">
+        <div class="color-group__header">
+          <h2 id="error-palette-title">Error Palette</h2>
+          <p>Supportive states for validation messaging.</p>
+        </div>
+        <div class="color-grid">
+          <article class="color-card">
+            <div class="color-card__swatch Error__Default" role="img" aria-label="Error Default"></div>
+            <div class="color-card__meta">
+              <p class="color-card__token">.Error__Default</p>
+              <p class="color-card__variable">var(--color-error-default)</p>
+              <p class="color-card__value">#ff705b</p>
+            </div>
+          </article>
+          <article class="color-card">
+            <div class="color-card__swatch Error__Light" role="img" aria-label="Error Light"></div>
+            <div class="color-card__meta">
+              <p class="color-card__token">.Error__Light</p>
+              <p class="color-card__variable">var(--color-error-light)</p>
+              <p class="color-card__value">#ffd4ce</p>
+            </div>
+          </article>
+          <article class="color-card">
+            <div class="color-card__swatch Error__Dark" role="img" aria-label="Error Dark"></div>
+            <div class="color-card__meta">
+              <p class="color-card__token">.Error__Dark</p>
+              <p class="color-card__variable">var(--color-error-dark)</p>
+              <p class="color-card__value">#4c221b</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

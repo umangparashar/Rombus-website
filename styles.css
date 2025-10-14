@@ -1,1 +1,142 @@
+:root {
+  /* Neutral palette */
+  --color-neutral-default: #e6e6e6;
+  --color-neutral-subtle-white: #bdbdbd;
+  --color-neutral-light-grey: #656565;
+  --color-neutral-grey: #232323;
+  --color-neutral-dark-grey: #111111;
+  --color-neutral-background: #070707;
 
+  /* Brand palette */
+  --color-brand-default: #b2e200;
+  --color-brand-light: #e8f6b3;
+  --color-brand-dark: #354400;
+  --color-brand-byzantine-blue: #2f52e0;
+  --color-brand-india-green: #008b00;
+
+  /* Error palette */
+  --color-error-default: #ff705b;
+  --color-error-light: #ffd4ce;
+  --color-error-dark: #4c221b;
+}
+
+/* Utility classes for quick reference */
+.Neutral__Default { background: var(--color-neutral-default); }
+.Neutral__SubtleWhite { background: var(--color-neutral-subtle-white); }
+.Neutral__LightGrey { background: var(--color-neutral-light-grey); }
+.Neutral__Grey { background: var(--color-neutral-grey); }
+.Neutral__DarkGrey { background: var(--color-neutral-dark-grey); }
+.Neutral__Background { background: var(--color-neutral-background); }
+.Neutral__Brand__Default { background: var(--color-brand-default); }
+.Neutral__Brand__Light { background: var(--color-brand-light); }
+.Neutral__Brand__Dark { background: var(--color-brand-dark); }
+.Neutral__Brand__ByzantineBlue { background: var(--color-brand-byzantine-blue); }
+.Neutral__Brand__IndiaGreen { background: var(--color-brand-india-green); }
+.Error__Default { background: var(--color-error-default); }
+.Error__Light { background: var(--color-error-light); }
+.Error__Dark { background: var(--color-error-dark); }
+
+.page {
+  min-height: 100vh;
+  margin: 0;
+  background: var(--color-neutral-background);
+  color: var(--color-neutral-default);
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+}
+
+.color-preview {
+  width: min(72rem, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.color-preview__header {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.color-preview__header p {
+  max-width: 48rem;
+  color: var(--color-neutral-subtle-white);
+  line-height: 1.6;
+}
+
+.color-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.color-group__header {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.color-group__header p {
+  color: var(--color-neutral-subtle-white);
+}
+
+.color-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+}
+
+.color-card {
+  background: var(--color-neutral-grey);
+  border: 1px solid var(--color-neutral-dark-grey);
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 15rem;
+}
+
+.color-card__swatch {
+  height: 8rem;
+  border-bottom: 1px solid var(--color-neutral-dark-grey);
+}
+
+.color-card__meta {
+  display: grid;
+  gap: 0.25rem;
+  padding: 1.25rem;
+  color: var(--color-neutral-default);
+}
+
+.color-card__token {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--color-brand-light);
+}
+
+.color-card__variable {
+  font-family: "Fira Code", "SFMono-Regular", "Consolas", monospace;
+  font-size: 0.9rem;
+  color: var(--color-brand-byzantine-blue);
+}
+
+.color-card__value {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-brand-default);
+}
+
+@media (max-width: 48rem) {
+  .page {
+    padding: 2.5rem 1rem;
+  }
+
+  .color-preview {
+    gap: 2.5rem;
+  }
+
+  .color-card__swatch {
+    height: 6.5rem;
+  }
+}
