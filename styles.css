@@ -320,6 +320,238 @@
   justify-content: center;
   white-space: nowrap;
 }
+
+/* -------------------------------------------------------------------------- */
+/* Layout Two · Media Overlay Card                                            */
+/* -------------------------------------------------------------------------- */
+
+.demo-two-page {
+  margin: 0;
+  min-height: 100vh;
+  background: #070707;
+  color: #e6e6e6;
+  font-family: "Roboto Flex", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  padding: 64px;
+  box-sizing: border-box;
+}
+
+.demo-two__header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+  max-width: min(100%, 720px);
+}
+
+.demo-two__header .Content__Caption {
+  color: #bdbdbd;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.demo-two {
+  width: min(100%, 1200px);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.demo-two__preview {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 48px;
+  background: #111111;
+  border: 1px solid #232323;
+  border-radius: var(--radius-extra-large);
+  box-sizing: border-box;
+}
+
+.layout-two-page {
+  margin: 0;
+  min-height: 100vh;
+  background: #070707;
+  color: #e6e6e6;
+  font-family: "Roboto Flex", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 64px;
+  box-sizing: border-box;
+}
+
+.layout-two {
+  width: min(100%, 1200px);
+  display: flex;
+  justify-content: center;
+}
+
+.layout-two__element {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.media-overlay-card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: min(100%, 960px);
+  min-height: 380px;
+  padding: 80px 40px 40px;
+  border-radius: var(--radius-large);
+  overflow: hidden;
+  isolation: isolate;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+  color: inherit;
+}
+
+.media-overlay-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(
+    --media-card-image,
+    url("https://images.unsplash.com/photo-1526481280695-3c469f152789?auto=format&fit=crop&w=1920&q=80")
+  );
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.02);
+  z-index: -2;
+}
+
+.media-overlay-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.35) 60%,
+    rgba(0, 0, 0, 0.55) 100%
+  );
+  z-index: -1;
+}
+
+.media-overlay-card__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: min(100%, 37.5rem);
+  max-width: clamp(20rem, 55vw, 37.5rem);
+}
+
+.media-overlay-card__subtitle {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+  color: #b2e200;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.media-overlay-card__subtitle::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 48px;
+  background: currentColor;
+  border-radius: 999px;
+  opacity: 0.85;
+}
+
+.media-overlay-card__title {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 500;
+  letter-spacing: normal;
+  color: inherit;
+  margin: 0;
+}
+
+.media-overlay-card__body {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+  color: inherit;
+  margin: 0;
+}
+
+@media (max-width: 1199px) {
+  .layout-two-page {
+    padding: 48px;
+  }
+
+  .demo-two-page {
+    padding: 48px;
+    gap: 40px;
+  }
+
+  .demo-two__preview {
+    padding: 40px;
+  }
+
+  .media-overlay-card {
+    min-height: 340px;
+    padding: 64px 32px 32px;
+  }
+
+  .media-overlay-card__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 767px) {
+  .layout-two-page {
+    padding: 32px;
+  }
+
+  .demo-two-page {
+    padding: 32px;
+    gap: 32px;
+  }
+
+  .demo-two__header {
+    text-align: left;
+  }
+
+  .demo-two__preview {
+    padding: 28px;
+  }
+
+  .media-overlay-card {
+    min-height: 300px;
+    padding: 48px 24px 24px;
+  }
+
+  .media-overlay-card__content {
+    max-width: 90%;
+    width: 90%;
+  }
+
+  .media-overlay-card__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .media-overlay-card__body {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
 .Button {
   display: inline-flex;
   align-items: center;

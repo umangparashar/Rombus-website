@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Layout Two · Media Overlay Card</title>
+    <title>Layout Two · Media Overlay Card Preview</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,9 +12,18 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="layout-two-page">
-    <main class="layout-two">
-      <section class="layout-two__element">
+  <body class="demo-two-page">
+    <header class="demo-two__header">
+      <span class="Content__Caption">Layout Two</span>
+      <h1 class="Headings__H1">Media Overlay Card Preview</h1>
+      <p class="Content__Body">
+        Explore how the media overlay card renders inside a dedicated container.
+        The card keeps its responsive padding, typography, and accent styling so
+        you can validate the component without visiting the full layout page.
+      </p>
+    </header>
+    <main class="demo-two">
+      <section class="demo-two__preview">
         <article
           class="media-overlay-card"
           style="--media-card-image: url('https://images.unsplash.com/photo-1514890547357-a9ee288728e0?auto=format&fit=crop&w=1920&q=80');"
@@ -25,9 +34,9 @@
               Discover the Hidden Trails of the Fjord
             </h2>
             <p class="media-overlay-card__body">
-              Guided journeys through Norway's remote fjords combine expert local
-              guides with small-group excursions designed to reveal the region's
-              quiet wonders.
+              Guided journeys through Norway's remote fjords combine expert
+              local guides with small-group excursions designed to reveal the
+              region's quiet wonders.
             </p>
           </div>
         </article>
