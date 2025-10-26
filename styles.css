@@ -591,3 +591,144 @@ body {
   justify-content: center;
   white-space: nowrap;
 }
+.demo-section {
+  width: 100%;
+  max-width: 1512px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.demo-section__container {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+.demo-section__media {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.demo-section__content {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  width: 100%;
+  padding-top: 120px;
+  padding-bottom: 80px;
+  box-sizing: border-box;
+}
+
+.demo-section__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.demo-section__headline,
+.demo-section__subheadline {
+  margin: 0;
+}
+
+.demo-section__subheadline {
+  max-width: 560px;
+}
+
+.demo-section__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+.demo-section__features {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.demo-section__feature {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.demo-section__feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  border-radius: var(--radius-large);
+  box-sizing: border-box;
+}
+
+.demo-section__feature-symbol {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-small);
+  background-color: #ffffff;
+  color: #b2e200;
+  font-size: 36px;
+}
+
+.demo-section__feature-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.demo-section__feature-content > * {
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .demo-section__container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .demo-section__content {
+    padding-top: 80px;
+    align-items: center;
+    gap: 96px;
+  }
+
+  .demo-section__intro,
+  .demo-section__features,
+  .demo-section__feature {
+    align-items: center;
+    text-align: center;
+  }
+
+  .demo-section__feature {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+  .demo-section {
+    padding: 48px 16px;
+  }
+
+  .demo-section__content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 64px;
+  }
+
+  .demo-section__features {
+    gap: 48px;
+  }
+}
